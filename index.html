@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1cab0d5683.js" crossorigin="anonymous"></script>
+<<<<<<< HEAD
     <link rel="stylesheet" href="./CSS/styles.css">
+=======
+    <link rel="stylesheet" href="./css/style.css">
+>>>>>>> 87cd8aaeafd4beee794bcb8fe5b2487c5395cde0
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,6 +21,7 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <style type="text/css">
         /* Estilos generales que se aplicarán en todas las pantallas */
+<<<<<<< HEAD
         /* Estilo general para dispositivos grandes (pantallas de escritorio) */
         hr {
             width: 80%;
@@ -202,12 +207,129 @@
 
 
 </head>
+=======
+    
+        /* Media query para pantallas pequeñas (hasta 600px) */
+        @media screen and (max-width: 600px) {
+    /* Estilos específicos para pantallas pequeñas */
+    body {
+		font-size:80%; 
+	} 
+    .img{
+        width: 100%;
+        
+    }
+    .navbar{
+        width:100%;
+
+    }
+    .banner{
+        width:100%;
+        display: none;
+        margin-top: 22%;
+    }
+
+    .nav-link {
+        display:block;
+        float:none;
+	    width:100%;
+        /* Ajusta los estilos de los enlaces de navegación para pantallas pequeñas */
+    }
+    .card-container{
+        display: block;
+        float: center;
+        margin-top:6%;
+        margin-bottom: 0%;
+
+        
+        
+	   
+    }
+    .card{
+        width:100%; 
+        padding-top:  6%;
+        padding-left: 35%;
+    }
+    
+   
+    
+
+    /* Otros estilos específicos para pantallas pequeñas */
+}
+       /* Diseño para tabletas (601px a 1024px) */
+       @media screen and (min-width: 601px) and (max-width: 1024px) {
+                body {
+                    font-size: 80%;
+                }
+    
+                img {
+                    width: 100%;
+                }
+    
+                .navbar {
+                    width: 100%;
+                }
+                .ban{
+                    margin-bottom: 0%;
+                }
+    
+                .banner {
+                    width: 100%;
+                    display: inline;
+                    margin-top: 2%;
+                    margin-bottom: 0%;
+                    border-radius: 0px;
+                    
+                }
+    
+                .nav-link {
+                    display: block;
+                    float: none;
+                    width: 100%;
+                    /* Ajusta los estilos de los enlaces de navegación para tabletas */
+                }
+    
+                .destacado {
+                    display: block;
+                    float: center;
+                    padding-top: 8%;
+                    padding-right: 2%;
+                    margin-bottom: 0%;
+                    margin-left: 2rem;
+                }
+    
+                .card-container {
+                    display: block;
+                    float: center;
+                    margin-top: 0%;
+                    margin-bottom: 0%;git
+                    margin-left: -4%;
+                }
+    
+                .card {
+                    width: 100%;
+                    padding-left: 35%;
+                }
+            }
+    </style>
+    
+   
+</head>
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+
+>>>>>>> 87cd8aaeafd4beee794bcb8fe5b2487c5395cde0
 <body>
     <header>
 
 
         <div>
 
+<<<<<<< HEAD
 
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark pz-0">
                 <div class="container-fluid">
@@ -261,6 +383,47 @@
 
 
             
+=======
+            <nav class="navbar navbar-expand-lg navbar-dark  pz-0">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><p class="titulo_nav" style="font-family: Lobster, cursive; color: #fb0101; font-size: 37pt; padding-left: 7rem;">Bitácora</p></a>
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                    <ul class="navbar-nav ml-auto pr-5">
+                        <li class="nav-item active " >
+                            <a class="nav-link nav" href="#">Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+        
+                    </ul>
+        
+                </div>
+        
+                </div>
+                
+            </nav>
+            <div class="redes col-12 text-light display-8 iconos">
+                <a href="#" class="text-light"><i class="fa-brands fa-square-facebook fa-2xl"></i></a>
+                <a href="#" class="text-light"><i class="fa-brands fa-square-instagram fa-2xl"></i></a>
+                <a href="#" class="text-light"><i class="fa-brands fa-square-whatsapp fa-2xl"></i></a>
+            </div>
+>>>>>>> 87cd8aaeafd4beee794bcb8fe5b2487c5395cde0
 
     </header>
     <!--banner-->
@@ -271,6 +434,7 @@
         <img class="banner" src="./img/banner.jpg" alt="banner">
 
     </div>
+<<<<<<< HEAD
     
 
     <div class="container">
@@ -283,10 +447,24 @@
             <section class="card-container">
                 <div class="card">
 
+=======
+
+
+    <div class="container">
+        
+
+        <main class="contenido">
+            <hr>
+
+            <section class="card-container">
+                <div class="card">
+                    
+>>>>>>> 87cd8aaeafd4beee794bcb8fe5b2487c5395cde0
                     <div class="card-body">
                         <img src="./img/valpo.jpg" class="card-img-top" alt="...">
 
                         <h3 class="til">Valparaiso, Chile.</h3>
+<<<<<<< HEAD
                         <p class="card-text ">Valparaíso, conocida como la 'Joyita del Pacífico', es una ciudad portuaria chilena que cautiva con su encanto bohemio y vistas panorámicas.</p>
                         <a href="#" class="btn btn-danger">Ver más</a>
                     </div>
@@ -313,12 +491,36 @@
                         <h3 class="til">Sao Paulo, brasil.</h3>
                         <p class="card-text "> Sao Paulo, la ciudad que nunca duerme en Brasil, es un epicentro cultural y económico. Con rascacielos imponentes y una escena gastronómica vibrante.</p>
                         <a href="#" class="btn btn-danger">Ver más</a>
+=======
+                        <p class="card-text ">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+                <div class="card">
+                    
+                    <div class="card-body">
+                        <img src="./img/bellasartes_mx.jpg" class="card-img-top" alt="...">
+                        
+                        <h3 class="til">Ciudad de México.</h3>
+                        <p class="card-text ">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+                <div class="card">
+                    
+                    <div class="card-body">
+                        <img src="./img/saopaulo.jpg" class="card-img-top" alt="...">
+                        <h3 class="til">Sao Paulo, Brasil.</h3>
+                        <p class="card-text ">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+>>>>>>> 87cd8aaeafd4beee794bcb8fe5b2487c5395cde0
                     </div>
                 </div>
             </section>
 
         </main>
     </div>
+<<<<<<< HEAD
     <div class="sep">
     </div>
     <div class="mapagran">
@@ -327,6 +529,12 @@
             width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+=======
+    
+    <section>
+
+    </section>
+>>>>>>> 87cd8aaeafd4beee794bcb8fe5b2487c5395cde0
 
     <footer class="footer">
         <div class="pie">
@@ -340,7 +548,10 @@
             <div class="pie-texto">
                 <h3>Institucional</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, <br>adipisicing elit. Architecto totam quae vitae.</p>
+<<<<<<< HEAD
             
+=======
+>>>>>>> 87cd8aaeafd4beee794bcb8fe5b2487c5395cde0
             </div>
             <div>
                 <h3>Dirección</h3>
@@ -352,6 +563,7 @@
             </div>
             <div>
                 <h3>RRSS</h3>
+<<<<<<< HEAD
                 
                 <ul class="ul-f">
                     <li><a href="#" class="text-light">Siguenos en Facebook</a></li>
@@ -371,6 +583,22 @@ integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRk
 integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
 </script>
 
+=======
+                <ul class="ul-f">
+
+                    <li><a href="#" class="text-light">Facebook</a></li>
+                    <li><a href="#" class="text-light">Instagram</a></li>
+                    <li><a href="#" class="text-light">WhatsApp</a></li>
+                </ul>
+            </div>
+
+
+
+
+        </div>
+    </footer>
+
+>>>>>>> 87cd8aaeafd4beee794bcb8fe5b2487c5395cde0
 
 </body>
 
