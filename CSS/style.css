@@ -1,0 +1,123 @@
+@charset "UTF-8";
+.iconos a {
+  text-align: center;
+  padding-bottom: 0px;
+  margin-right: 10px;
+  color: #2c2e2c;
+}
+
+.sep {
+  margin-bottom: 2%;
+}
+
+.ban {
+  display: flex;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.banner {
+  width: 75%;
+  height: 320px;
+  text-align: center;
+  padding-top: 0%;
+  background-image: url();
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  max-width: 1200px auto;
+  border-radius: 7px;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
+}
+
+.card-container {
+  display: flex;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  margin-top: 4rem;
+  justify-content: space-between; /* Espacio entre las tarjetas */
+}
+
+.card {
+  width: 21rem;
+  padding-left: 0rem;
+  padding-top: 0rem;
+  padding-bottom: 1rem;
+}
+
+.card-img-top {
+  justify-content: left;
+  padding-left: 0rem;
+  padding-top: 0%;
+  border-radius: 0pt;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
+}
+
+.card-text {
+  font-size: 18px;
+  color: #000103;
+}
+
+img {
+  width: 40px;
+  height: 180px;
+  padding-top: 5%;
+  border-radius: 0;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
+}
+
+/* Cambiar el color del botón personalizado */
+.custom-btn {
+  background-color: #ff0000; /* Puedes ajustar el código de color según tus preferencias */
+  border-color: #ff0000; /* Cambia el color del borde si es necesario */
+  color: #ffffff; /* Cambia el color del texto para asegurar la legibilidad en el nuevo fondo */
+}
+
+.footer {
+  background-color: #000000;
+  color: #d2d0de;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.pie {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+.pie div {
+  width: 10rem;
+  margin: 0 10px;
+}
+
+.pie p {
+  font-size: 16px;
+  color: #d2d0de;
+  line-height: 1.5;
+  padding-top: 8%;
+  margin-bottom: 20px;
+  width: 8 px;
+  text-align: justify;
+}
+
+.ul-f {
+  color: #d2d0de;
+  padding: 0;
+  margin-top: 3px;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

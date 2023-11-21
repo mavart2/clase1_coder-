@@ -1,0 +1,39 @@
+
+
+.footer{
+    background-color: #000000;
+    color: #d2d0de;
+    padding: 20px 0;
+    text-align: center;  
+}
+
+.pie{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: auto;
+    margin-right: 10px;
+}
+.pie div {
+    width: 10rem;
+    margin:0 10px;
+}
+
+.pie p {
+    font-size: 16px;
+    color: #d2d0de;
+    line-height: 1.5;
+    padding-top: 8%;
+    margin-bottom: 20px;
+    width: 8 px;
+    text-align: justify;
+}
+.ul-f {
+    
+    color: #d2d0de;
+    padding: 0;
+    width: 150pt;
+    margin-top: 15px;
+    list-style-type: none;
+    text-decoration: none;  
+}

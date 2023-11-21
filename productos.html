@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1cab0d5683.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato&family=Mooli&family=Roboto:ital,wght@0,700;1,100&display=swap"
+        rel="stylesheet">
+    <title>Proyecto-MV</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <style type="text/css">
+        /* Estilos generales que se aplicarán en todas las pantallas */
+        hr {
+            display: none;
+            /* Ajusta el margen según sea necesario */
+        }
+
+        .mapagran {
+            display: none;
+            /* Oculta el elemento <hr> en tamaños de pantalla más pequeños */
+        }
+
+        /* Media query para pantallas pequeñas (hasta 600px) */
+        @media screen and (max-width: 600px) {
+
+            /* Estilos específicos para pantallas pequeñas */
+            body {
+                font-size: 80%;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .navbar {
+                width: 100%;
+
+            }
+
+            .banner {
+                width: 100%;
+                display: none;
+                margin-top: 22%;
+            }
+
+            .nav-link {
+                display: block;
+                float: none;
+                width: 100%;
+                /* Ajusta los estilos de los enlaces de navegación para pantallas pequeñas */
+            }
+
+            .container{
+                width: 100%;
+                margin-top: 0%;
+            }
+            
+            
+            .card-container {
+                display: block;
+                float: center;
+                margin-top: 6%;
+                margin-bottom: 0%;
+            }
+            
+
+            .card {
+                width: 100%;
+                padding-top: 6%;
+                padding-left: 0%;
+            }
+
+            .footer {
+                .pie {
+                    .mapa {
+                        iframe {
+                            width: 100%;
+                            height: 200px;
+                            border: 0;
+                        }
+                    }
+                }
+            }
+
+            .mapa {
+                display: none;
+            }
+
+            /* Otros estilos específicos para pantallas pequeñas */
+            .mapagran {
+                display: inline;
+                width: 100%;
+                height: 30%;
+
+
+            }
+        }
+
+        /* Diseño para tabletas (601px a 1024px) */
+        @media screen and (min-width: 601px) and (max-width: 1024px) {
+            body {
+                font-size: 80%;
+            }
+
+            img {
+                width: 100%;
+                height: 130px;
+                
+            }
+
+            .navbar {
+                width: 100%;
+            }
+
+            .ban {
+                margin-bottom: 0%;
+            }
+
+            .banner {
+                width: 100%;
+                display: inline;
+                margin-top: 2%;
+                margin-bottom: 0%;
+                border-radius: 0px;
+
+            }
+
+            .nav-link {
+                display: block;
+                float: none;
+                width: 100%;
+                /* Ajusta los estilos de los enlaces de navegación para tabletas */
+            }
+
+            .destacado {
+
+                width: 80%;
+                /* Ajusta el ancho según tus necesidades */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .sep {
+                height: 30%;
+                /* Ajusta la altura según tus necesidades */
+            }
+            .hr{
+    height: 0px;
+    border:10px dashed;
+    color: #dcdee1;
+}
+
+
+            .noticia-2 {
+                padding-left: 20px;
+                /* Ajusta el relleno según tus necesidades */
+                width: 80%;
+                justify-content: center;
+
+            }
+            .container{
+                width: 100%;
+                margin-top: 0%;
+            }
+           
+        
+            .card-container {
+                flex-direction: row;
+                
+            }
+
+            .card {
+                width: 100%; /* Ocupa el 100% del ancho en tabletas */
+                 margin-bottom: 20px; /* Espacio entre las tarjetas */
+            }
+
+            .mapagran {
+                display: inline;
+                width: 100%;
+            }
+
+            .footer {
+                width: 100%;
+            }
+
+            .mapa {
+                display: none;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+
+
+        <div>
+            <nav class="nav navbar navbar-expand-lg navbar-dark bg-dark pz-0">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <p class="titulo_nav"
+                            style="font-family: Lobster, cursive; color: #ffff; font-size: 37pt; padding-left: 7rem;">
+                            Bitácora</p>
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto pr-5">
+                            <li class="nav-item">
+                                <a class="nav-link nav" href="./index.html">Inicio <span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link " href="#">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contacto</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </nav>
+            <nav class="navbar bg-danger">
+                <form class="container-fluid justify-content-start">
+                    <div class="container-fluid d-flex justify-content-center align-items-center iconos">
+                        <a href="#" class="text-light"><i class="fa-brands fa-square-facebook fa-2xl"></i></a>
+                        <a href="#" class="text-light"><i class="fa-brands fa-square-instagram fa-2xl"></i></a>
+                        <a href="#" class="text-light"><i class="fa-brands fa-square-whatsapp fa-2xl"></i></a>
+
+                    </div>
+                </form>
+            </nav>
+
+
+            
+            
+
+
+
+
+    </header>
+    <!--banner-->
+    <div class="sep">
+    </div>
+
+    <div class="container">
+        <main class="contenido">
+            <section class="card-container">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="../img/cusco.jpeg" class="card-img-top" alt="...">
+
+                        <h3 class="til pt-4">Cusco, Perú.</h3>
+                        <p class="card-text ">Cusco, la antigua capital del Imperio Inca, cautiva con su encanto
+                            histórico y arquitectura colonial. Rodeada por majestuosas montañas, es un destino
+                            imprescindible.</p>
+                        <a href="#" class="btn btn-danger">Ver más</a>
+                    </div>
+                </div>
+                <div class="sep">
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <img src="../img/castro.jpg" class="card-img-top" alt="...">
+
+                        <h3 class="til pt-4">Castro, Chile.</h3>
+                        <p class="card-text">Castro, ubicada en la Isla Grande de Chiloé, Chile, destaca por sus
+                            palafitos coloridos y su rica tradición cultural. Con vistas a la bahía y encanto costero.
+                        </p>
+                        <a href="#" class="btn btn-danger">Ver más</a>
+                    </div>
+                </div>
+                <div class="sep">
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <img src="../img/zacatecas.jpg" class="card-img-top" alt="...">
+
+                        <h3 class="til pt-4">Zacatecas, México.</h3>
+                        <p class="card-text ">Zacatecas, ubicado en el norte de México, es conocido por su rica herencia
+                            colonial, reflejada en sus impresionantes arquitecturas históricas y su vibrante escena
+                            cultural.</p>
+                        <a href="#" class=" btn btn-danger">Ver más</a>
+                    </div>
+                </div>
+            </section>
+            <div class="sep">
+            </div>
+            <section class="card-container">
+                <div class="card">
+
+                    <div class="card-body">
+                        <img src="./img/valpo.jpg" class="card-img-top" alt="...">
+
+                        <h3 class="til pt-4">Valparaiso, Chile.</h3>
+                        <p class="card-text ">Valparaíso, conocida como la 'Joyita del Pacífico', es una ciudad
+                            portuaria chilena que cautiva con su encanto bohemio y vistas panorámicas.</p>
+                        <a href="#" class="btn btn-danger">Ver más</a>
+                    </div>
+                </div>
+                <div class="sep">
+                </div>
+                <div class="card">
+
+                    <div class="card-body">
+                        <img src="./img/bellasartes_mx.jpg" class="card-img-top" alt="...">
+
+                        <h3 class="til pt-4">Ciudad de México.</h3>
+                        <p class="card-text ">La Ciudad de México, vibrante y llena de contrastes, fusiona la riqueza
+                            histórica de sus antiguas civilizaciones con la energía contemporánea de una metrópoli
+                            global.</p>
+                        <a href="#" class="btn btn-danger">Ver más</a>
+                    </div>
+                </div>
+                <div class="sep">
+                </div>
+
+                <div class="card">
+
+                    <div class="card-body">
+                        <img src="./img/saopaulo.jpg" class="card-img-top" alt="...">
+
+                        <h3 class="til pt-4">Sao Paulo, brasil.</h3>
+                        <p class="card-text "> Sao Paulo, la ciudad que nunca duerme en Brasil, es un epicentro cultural
+                            y económico. Con rascacielos imponentes y una escena gastronómica vibrante.</p>
+                        <a href="#" class="btn btn-danger">Ver más</a>
+                    </div>
+                </div>
+
+            </section>
+            <div class="sep">
+            </div>
+            <section class="card-container">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="../img/cusco.jpeg" class="card-img-top" alt="...">
+
+                        <h3 class="til pt-4">Cusco, Perú.</h3>
+                        <p class="card-text ">Cusco, la antigua capital del Imperio Inca, cautiva con su encanto
+                            histórico y arquitectura colonial. Rodeada por majestuosas montañas, es un destino
+                            imprescindible.</p>
+                        <a href="#" class="btn btn-danger">Ver más</a>
+                    </div>
+                </div>
+                <div class="sep">
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <img src="../img/castro.jpg" class="card-img-top" alt="...">
+
+                        <h3 class="til pt-4">Castro, Chile.</h3>
+                        <p class="card-text">Castro, ubicada en la Isla Grande de Chiloé, Chile, destaca por sus
+                            palafitos coloridos y su rica tradición cultural. Con vistas a la bahía y encanto costero.
+                        </p>
+                        <a href="#" class="btn btn-danger">Ver más</a>
+                    </div>
+                </div>
+                <div class="sep">
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <img src="../img/zacatecas.jpg" class="card-img-top" alt="...">
+
+                        <h3 class="til pt-4">Zacatecas, México.</h3>
+                        <p class="card-text ">Zacatecas, ubicado en el norte de México, es conocido por su rica herencia
+                            colonial, reflejada en sus impresionantes arquitecturas históricas y su vibrante escena
+                            cultural.</p>
+                        <a href="#" class=" btn btn-danger">Ver más</a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+    <div class="sep">
+    </div>
+    
+    <div class="mapagran">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d213049.14492683113!2d-70.658521!3d-33.452097!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96626f6a7df81e51%3A0x60cdc26d444b83da!2sRegi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1700350847716!5m2!1ses!2scl"
+            width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+    <footer class="footer">
+        <div class="pie">
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53262.334399541556!2d-70.69972120609353!3d-33.452018572805734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d0069af23abb%3A0x879d59f409ed4897!2sSantiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1695518511436!5m2!1ses!2scl"
+                    width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="pie-texto">
+                <h3>Institucional</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, <br>adipisicing elit. Architecto totam quae vitae.</p>
+            </div>
+            <div>
+                <h3>Dirección</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, <br>adipisicing elit. Architecto totam quae vitae.</p>
+            </div>
+            <div>
+                <h3>Contacto</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, <br>adipisicing elit. Architecto totam quae vitae.</p>
+            </div>
+            <div>
+                <h3>RRSS</h3>
+                <ul class="ul-f">
+                    <li><a href="#" class="text-light">Siguenos en Facebook</a></li>
+                    <li><a href="#" class="text-light">Siguenos en Instagram</a></li>
+                    <li><a href="#" class="text-light">Siguenos en WhatsApp</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+//utilities
+@import"./utilities/variables";
+//base
+@import"./base/tipografias";
+@import"./base/reset";
+//layout
+@import"./layout/footer";
+@import"./layout/navbar";
+
+/*.menu{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ajusta el valor según sea necesario para evitar solapamiento 
+}*/
+  .sep{
+      margin-bottom: 2%;
+      
+  }
+  .ban{
+      display: flex;
+      margin-top: 4%;
+      margin-bottom: 4%;   
+  }
+  
+.banner{
+    width: 85%;
+    height: 320px;
+    text-align: center;
+    padding-top: 0%;
+    background-image: url();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    max-width: 1200px auto;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+.container{
+    width: 100%;
+    margin-top: 0%;
+}
+.contenido{
+    margin-top: 0%;
+
+}
+.card-container {
+    width: 100%;
+    display: flex;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    margin-top: 4rem;
+    justify-content: space-between; /* Espacio entre las tarjetas */
+}
+.card {
+    width: 21rem;
+    padding-left: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 1rem; 
+    margin-left: 2%;  
+}
+.card-body{
+    width: 100%;
+}
+
+.card-img-top {
+    justify-content: left;
+    padding-left: 0rem;
+    padding-top: 0%;
+    border-radius: 3pt;
+    -webkit-border-radius: 3pt;
+    -moz-border-radius: 3pt;
+    -ms-border-radius: 3pt;
+    -o-border-radius: 3pt;
+}
+
+img{
+    width: 40px;
+    height: 180px;
+    padding-top: 5%;
+    border-radius: 0;
+    
+}
+
+.text-light{
+    font-size: 16px;
+    color: #d2d0de;
+    height: 35px;
+    
+}
+
+
+.til{
+    padding-top: 14pt;
+}
+.card-text {
+    
+    font-size: 14px;
+    color: $text-color;
+    font-family: Roboto;
+
+}
+.btn {
+    
+    background-color: $danger; /* Puedes ajustar el código de color según tus preferencias */
+    border-color: #dc3545; /* Cambia el color del borde si es necesario */
+    color: #ffffff; /* Cambia el color del texto para asegurar la legibilidad en el nuevo fondo */
+  }
+  .sep{
+    margin-bottom: 2%;
+}
+  .destacado{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 4%;
+    margin-left: 10%;
+    margin-bottom: 4%;
+}
+  .fotodes{
+    width: 450px;
+    height: 338px;
+    border-radius: 25% 10%;
+    -webkit-border-radius: 25% 10%;
+    -moz-border-radius: 25% 10%;
+    -ms-border-radius: 25% 10%;
+    -o-border-radius: 25% 10%;
+}
+.noticia-2{
+    margin-top: 0;
+    padding-left: 2%;
+    height: 270px;
+    width: 25rem;
+    text-align: left;
+    
+}
+.hr{
+    height: 0px;
+    border:10px dashed;
+    color: #dcdee1;
+}
+
+
+
+
+
