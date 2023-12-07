@@ -53,19 +53,19 @@
     width: 100%;
     z-index: 1000; /* Ajusta el valor según sea necesario para evitar solapamiento 
 }*/
-.sep {
-  margin-bottom: 2%;
+.navbar {
+  padding-bottom: 0%;
 }
 
 .ban {
   display: flex;
-  margin-top: 4%;
-  margin-bottom: 4%;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 6%;
 }
 
 .banner {
-  width: 85%;
-  height: 320px;
+  width: 100%;
   text-align: center;
   padding-top: 0%;
   background-image: url();
@@ -74,11 +74,6 @@
   background-size: cover;
   margin: 0 auto;
   max-width: 1200px auto;
-  border-radius: 7px;
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  -ms-border-radius: 7px;
-  -o-border-radius: 7px;
 }
 
 .container {
@@ -93,22 +88,70 @@
 .card-container {
   width: 100%;
   display: flex;
-  margin-top: 6%;
-  margin-bottom: 6%;
-  margin-top: 4rem;
-  justify-content: space-between; /* Espacio entre las tarjetas */
+  margin: auto;
+  justify-content: space-between;
+  /* Espacio entre las tarjetas */
 }
 
 .card {
-  width: 21rem;
+  width: 27rem;
   padding-left: 0rem;
   padding-top: 0rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0rem;
   margin-left: 2%;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease;
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -ms-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+  -webkit-transform: translateY(-3%);
+  -moz-transform: translateY(-3%);
+  -ms-transform: translateY(-3%);
+  -o-transform: translateY(-3%);
+}
+
+.card2 {
+  border: 2px solid #ccc;
+  /* Ancho y color del borde */
+  border-radius: 10px;
+  /* Radio de la esquina para suavizar el borde */
+  width: 70%;
+  /* Ajusta el ancho según tus necesidades */
+  margin: auto;
+  /* Centra la card2 horizontalmente */
+  margin-top: 20px;
+  /* Espacio en la parte superior */
+}
+
+.card-header {
+  background-color: #f8f9fa;
+  /* Color de fondo del encabezado */
+  border-bottom: 2px solid #ccc;
+  /* Borde inferior del encabezado */
+  padding: 10px;
+  /* Espaciado interno del encabezado */
 }
 
 .card-body {
-  width: 100%;
+  padding: 20px;
+  /* Espaciado interno del cuerpo */
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #dc3545;
+  /* Color de fondo del botón */
+  color: #fff;
+  /* Color del texto del botón */
+  border: none;
+  cursor: pointer;
 }
 
 .card-img-top {
@@ -123,7 +166,7 @@
 }
 
 img {
-  width: 40px;
+  width: 400px;
   height: 180px;
   padding-top: 5%;
   border-radius: 0;
@@ -145,14 +188,31 @@ img {
   font-family: Roboto;
 }
 
+.card-text2 {
+  color: #2c2e2c;
+  font-family: Roboto;
+}
+
 .btn {
-  background-color: #dc3545; /* Puedes ajustar el código de color según tus preferencias */
-  border-color: #dc3545; /* Cambia el color del borde si es necesario */
-  color: #ffffff; /* Cambia el color del texto para asegurar la legibilidad en el nuevo fondo */
+  background-color: #dc3545;
+  /* Puedes ajustar el código de color según tus preferencias */
+  border-color: #dc3545;
+  /* Cambia el color del borde si es necesario */
+  color: #ffffff;
+  /* Cambia el color del texto para asegurar la legibilidad en el nuevo fondo */
 }
 
 .sep {
-  margin-bottom: 2%;
+  margin-bottom: 4%;
+}
+
+.sep2 {
+  height: 100px;
+}
+
+.row {
+  align-content: d-flex;
+  align-items: center;
 }
 
 .destacado {
@@ -161,25 +221,42 @@ img {
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 4%;
-  margin-left: 10%;
+  margin-left: 12%;
   margin-bottom: 4%;
+  box-sizing: border-box;
+}
+
+.destacado2 {
+  width: 100%;
+  display: flex;
+  margin-top: 0%;
+  margin-left: 0%;
+  margin-bottom: 0%;
+  box-sizing: border-box;
 }
 
 .fotodes {
-  width: 450px;
-  height: 338px;
-  border-radius: 25% 10%;
-  -webkit-border-radius: 25% 10%;
-  -moz-border-radius: 25% 10%;
-  -ms-border-radius: 25% 10%;
-  -o-border-radius: 25% 10%;
+  width: 350px;
+  height: 252px;
+  padding-left: 0%;
+  border-radius: 20px 70px 20px 20px;
+  -webkit-border-radius: 20px 70px 20px 20px;
+  -moz-border-radius: 20px 70px 20px 20px;
+  -ms-border-radius: 20px 70px 20px 20px;
+  -o-border-radius: 20px 70px 20px 20px;
+}
+
+.fotoest {
+  padding-left: 0%;
+  width: 201px;
+  height: 126px;
 }
 
 .noticia-2 {
-  margin-top: 0;
-  padding-left: 2%;
+  flex: 1;
+  padding-left: 7%;
   height: 270px;
-  width: 25rem;
+  width: 20rem;
   text-align: left;
 }
 
@@ -187,6 +264,111 @@ img {
   height: 0px;
   border: 10px dashed;
   color: #dcdee1;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  font-size: 100%;
+  overflow-x: hidden;
+}
+
+#content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+#goTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+  padding: 10px;
+  border: none;
+  background-color: #dc3545;
+  color: #fff;
+  width: auto;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -ms-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+}
+
+#goTopBtn:hover {
+  background-color: #c01c2c;
+}
+
+.subscription-banner {
+  text-align: center;
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+.subscription-banner img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.subscription-banner p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.subscription-banner form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscription-banner input[type=email] {
+  padding: 10px;
+  margin-right: 10px;
+  width: 250px;
+}
+
+.subscription-banner input[type=submit] {
+  padding: 10px 20px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+.carousel {
+  padding-top: 0%;
+  margin-top: -5%;
+}
+
+.carousel-caption p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  /* Configuración de la sombra: offsetX, offsetY, blurRadius, color */
+}
+
+.carousel-caption h5 {
+  margin-bottom: 10px;
+  /* Espaciado adicional en la parte inferior del título */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  /* Configuración de la sombra: offsetX, offsetY, blurRadius, color */
 }
 
 /*# sourceMappingURL=styles.css.map */
